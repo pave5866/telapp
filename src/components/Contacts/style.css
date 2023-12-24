@@ -1,83 +1,93 @@
 body {
-    font-family: 'Arial', sans-serif;
-    /* line-height: 1.6; */
-    background-color: #072b3f;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-
-
-#container{
-    width: 400px;
-    background-color: rgb(47, 206, 206);
-    padding: 20px;
+  font-family: "Arial", sans-serif;
+  /* line-height: 1.6; */
+  background-color: #072b3f;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-input{
-    width: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-
+#container {
+  width: 400px;
+  background-color: rgb(47, 206, 206);
+  padding: 20px;
 }
 
-ul,li{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
-.kisiler{
-    margin: 15px;
-
-}
-.list , li{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    padding: 5px;
-    margin-bottom: 2px;
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.list , li:hover{
-    color: blueviolet;
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.addkisi{
-    color: blueviolet;
-    font-size: xx-large;
-    font-style: italic;
+.kisiler {
+  margin: 15px;
+}
+.list,
+li {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.list,
+li:hover {
+  color: blueviolet;
+}
+
+.addkisi {
+  color: blueviolet;
+  font-size: xx-large;
+  font-style: italic;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Normal durum */
-  .btn {
-    background-color: #7c0606;
-    color: #ffffff;
-  }
-  
-  /* Hover durumu */
-  .btn:hover {
-    background-color: #2980b9;
-  }
-  
-  /* Aktif durum (tıklama) */
-  .btn:active {
-    background-color: #1f618d;
-  }
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
-.toplamkisi{
-    color: yellow;
+/* Normal durum */
+.btn {
+  background-color: #7c0606;
+  color: #ffffff;
+}
+
+/* Hover durumu */
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Aktif durum (tıklama) */
+.btn:active {
+  background-color: #1f618d;
+}
+
+.toplamkisi {
+  color: yellow;
 }

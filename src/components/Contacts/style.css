@@ -8,16 +8,20 @@ body {
 }
 
 #container {
-  width: 400px;
+  width: 350px;
+  height: 100%;
   background-color: rgb(47, 206, 206);
   padding: 20px;
+  border-radius: 55px;
+  /* text-align: left; */
+  /* justify-self: center; */
 }
 
 input {
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 25px;
   width: 100%;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -26,7 +30,8 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #007bff;
+  border: red dotted 2px;
+  /* border-color: #2a72be; */
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
@@ -37,9 +42,6 @@ li {
   list-style-type: none;
 }
 
-.kisiler {
-  margin: 15px;
-}
 .list,
 li {
   background-color: rgb(0, 0, 0);
@@ -54,28 +56,27 @@ li:hover {
 }
 
 .addkisi {
+  padding: 10px;
+  margin: 1px;
   color: blueviolet;
-  font-size: xx-large;
-  font-style: italic;
+  /* font-size: xx-large; */
+  font-style: bold;
 }
 
 .btn {
+  background-color: #7c0606;
+  color: #ffffff;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 18px 55px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: background-color 0.3s ease;
-}
-
-/* Normal durum */
-.btn {
-  background-color: #7c0606;
-  color: #ffffff;
+  justify-self: center;
 }
 
 /* Hover durumu */

@@ -17,21 +17,20 @@ function List({ contacts }) {
   return (
     <div>
       <input
-        placeholder="Filtrele"
+        placeholder="Search..."
         value={filtertext}
         onChange={(e) => setFilterText(e.target.value)}
       />
-      <div>
-        <hr />
+      <div style={{borderBottom:"black dashed",padding:"5px"}}>
+        {/* <hr /> */}
         <button className="btn" onClick={clearFilter}>
           Filtreyi Temizle
         </button>
       </div>
-
-      <ul className="kisiler">
-        <hr />
-        <h1 className="addkisi">Eklenen Kişiler</h1>
-        <hr />
+      <ul style={{borderBottom:"black dashed",padding:"5px"}} className="kisiler">
+        {/* <hr /> */}
+        <h2 className="addkisi">Eklenen Kişiler</h2>
+        {/* <hr /> */}
         {filtered.map((contact, i) => (
           <li key={i}>
             {contact.fullname} - {contact.tel_numarasi}

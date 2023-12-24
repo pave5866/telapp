@@ -34,7 +34,7 @@ function Form({ addContact, contacts }) {
 
   return (
     <form onSubmit={onSubmit}>
-      <hr />
+      {/* <hr /> */}
       <div>
         <input
           name="fullname"
@@ -43,7 +43,6 @@ function Form({ addContact, contacts }) {
           onChange={onChangeInput}
         />
       </div>
-      <br />
       <div>
         <input
           name="tel_numarasi"
@@ -51,9 +50,11 @@ function Form({ addContact, contacts }) {
           value={form.tel_numarasi}
           onChange={onChangeInput}
         />
-        <hr />
+        {/* <hr /> */}
       </div>
-      <button className="btn">Kişi Ekle</button>
+      <div style={{borderTop:"black dashed",padding:"5px"}}>
+        <button className="btn">Kişi Ekle</button>
+      </div>
     </form>
   );
 }

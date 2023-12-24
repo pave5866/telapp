@@ -22,8 +22,8 @@ function Contacts() {
   }, [contacts]);
   return (
     <div id="container">
-      <hr />
-      <h1>Contacts App</h1>
+      {/* <hr /> */}
+      <h1 style={{borderBottom:"black dashed",padding:"5px"}} className="baslik">Contacts App</h1>
       <List contacts={contacts} />
       <Form addContact={setContacts} contacts={contacts} />
     </div>
